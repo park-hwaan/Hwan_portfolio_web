@@ -1,0 +1,55 @@
+/* Navbar 기본 */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 25px 80px; /* 위아래, 양옆 여백을 좀 더 넓게 */
+  display: flex;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: center;
+  background: transparent; /* 초기엔 투명 */
+  transition: all 0.4s ease; /* 부드러운 전환 */
+  z-index: 1000;
+  box-sizing: border-box; /* 패딩이 너비에 포함되도록 */
+}
+
+/* 스크롤 시 배경 - 사진의 다크한 느낌 유지 */
+.navbar.scrolled {
+  background: rgba(26, 27, 30, 0.95); /* 완전 흰색보다 다크 모드가 포트폴리오에 어울려요 */
+  padding: 15px 80px; /* 스크롤 시 높이를 살짝 줄여주는 센스 */
+  backdrop-filter: blur(10px); /* 유리알 효과 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 로고 스타일 */
+.navbar__logo {
+  font-size: 22px;
+  font-weight: 800; /* 아주 굵게 */
+  color: #ffffff; /* 무조건 흰색 */
+  letter-spacing: -0.5px;
+  margin-right: 900px; /* 로고와 메뉴 사이 거리 */
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* 메뉴 컨테이너 */
+.navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+/* 메뉴 아이템 개별 스타일 */
+.navbar__menu a {
+  margin-right: 35px; /* 메뉴 간의 간격 */
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8); /* 약간 투명한 흰색 */
+  font-weight: 600; /* 적당히 굵게 */
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+/* 마우스 올렸을 때 */
+.navbar__menu a:hover {
+  color: #ffffff; /* 마우스 올리면 선명한 흰색 */
+}
