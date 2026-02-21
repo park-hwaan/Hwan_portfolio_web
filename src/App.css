@@ -1,48 +1,26 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* 1. 가로를 꽉 채우기 위해 max-width 제거 */
+  width: 100%;
+  margin: 0;
+  padding: 0; /* 기본 패딩 제거 */
+  text-align: center; /* 글자 중앙 정렬은 유지해도 좋습니다 */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* 본문 영역 (네비게이션 바 아래로 밀어주기) */
+main {
+  width: 100%;
+  padding-top: 80px; /* ★ 네브바 높이만큼 공간 확보 (층 나누기 핵심!) */
+  min-height: 100vh; /* 화면을 꽉 채우도록 */
+  background-color: #1A1B1E; /* 배경색 통일 */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.box{
-  border: 1px solid red;
-  width: 100px;
-  height: 100px;
+/* 섹션 공통 스타일 */
+section {
+  width: 100%;
+  min-height: 100vh; /* 각 섹션이 화면 하나를 꽉 채우게 (포트폴리오 정석) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 내용 중앙 정렬 */
+  align-items: center;
+  scroll-margin-top: 80px; /* 메뉴 클릭 시 제목 안 가려지게 */
 }

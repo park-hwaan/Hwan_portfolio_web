@@ -66,3 +66,30 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* 폰트 등록 */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./fonts/pretend_regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./fonts/pretend_medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./fonts/pretend_semibold.otf') format('opentype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./fonts/pretend_bold.otf') format('opentype');
+  font-weight: 800;
+}
+
+/* 전체 기본 폰트 적용 */
+* {
+  font-family: 'Pretendard', -apple-system, sans-serif;
+}
