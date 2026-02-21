@@ -2,7 +2,6 @@ import React from 'react';
 import './Components.css'
 
 function About() {
-  // 1. 데이터를 배열로 분리 (보통은 별도 파일이나 가상 DB에서 가져옴)
   const aboutData = [
     { icon: "👤", label: "이름", value: "박환" },
     { icon: "📅", label: "생년월일", value: "00.11.29" },
@@ -14,7 +13,22 @@ function About() {
 
   return (
     <section id="about" className="about-section">
-      <div className="about-title">
+      <div className="hero-content">
+        <h1 className="hero-main-text">
+          - 박환 -<br />
+          프론트엔드 개발자 포트폴리오
+        </h1>
+        <p className="hero-sub-text">
+          안녕하세요.<br />
+          본질에 집중하는 프론트엔드 개발자 박환입니다.
+        </p>
+        <button className="hero-btn">더 알아보기 ↓</button>
+      </div>
+
+      <hr className="divider" /> {/* 섹션 구분선 */}
+
+      <div className="about-details">
+    <div className="about-title">
         <h2>ABOUT ME</h2>
       </div>
       
@@ -29,6 +43,8 @@ function About() {
           </div>
         ))}
       </div>
+  </div>
+    
     </section>
   );
 }

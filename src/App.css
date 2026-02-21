@@ -1,3 +1,5 @@
+/* index.css 또는 App.css */
+
 #root {
   /* 1. 가로를 꽉 채우기 위해 max-width 제거 */
   width: 100%;
@@ -9,9 +11,10 @@
 /* 본문 영역 (네비게이션 바 아래로 밀어주기) */
 main {
   width: 100%;
-  padding-top: 80px; /* ★ 네브바 높이만큼 공간 확보 (층 나누기 핵심!) */
-  min-height: 100vh; /* 화면을 꽉 채우도록 */
-  background-color: #1A1B1E; /* 배경색 통일 */
+  padding-top: 0; /* ★ 80px에서 0으로 수정 */
+  margin: 0;
+  min-height: 100vh;
+  background-color: #1A1B1E;
 }
 
 /* 섹션 공통 스타일 */
