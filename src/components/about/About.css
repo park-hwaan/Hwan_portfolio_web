@@ -1,0 +1,149 @@
+.about-section {
+  padding: 0;
+  background-color: #1A1B1E;
+  width: 100%;
+}
+
+/* ================= HERO ================= */
+
+.hero-content {
+  width: 100%;
+  padding: 100px 20px;
+  background-color: #1A1B1E;
+  color: white;
+}
+
+.hero-main-text {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.hero-sub-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.hero-btn {
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #e85a2a;
+  transform: translateY(-3px);
+}
+
+/* 구분선 */
+.divider {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #333;
+  margin: 0;
+}
+
+/* ================= ABOUT ================= */
+
+.about-details {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000;
+  padding: 10px 50px 80px 50px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 60px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* 🔥 이미지 + 정보 가로 배치 */
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-image {
+  width: 200px;   /* grid 한 열 크기와 맞춤 */
+}
+
+.about-image img {
+  width: 100%;
+  aspect-ratio: 3 / 4;   /* 증명사진 비율 */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 3열 그리드 */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 60px;
+  max-width: 700px;
+}
+
+.about-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* 추가 (왼쪽 정렬 명확히) */
+  text-align: left;          /* 혹시 모를 상속 대비 */
+}
+
+.label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.value {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ================= 모바일 ================= */
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img {
+    width: 200px;
+    height: 260px;
+  }
+}
