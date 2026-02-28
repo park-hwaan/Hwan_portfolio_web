@@ -22,7 +22,7 @@ function About() {
         </h1>
         <p className="hero-sub-text">
           안녕하세요.<br />
-          본질에 집중하는 프론트엔드 개발자 박환입니다.Q
+          끊기있는 앱,웹 개발자 박환입니다.
         </p>
         <button className="hero-btn">더 알아보기 ↓</button>
       </div>
