@@ -8,11 +8,23 @@ body, html {
 /* ================= HERO (상단 영역) ================= */
 .hero-content {
   width: 100%;
-  /* 패딩을 기존 100px에서 50px로 축소하여 높이 압축 */
-  padding: 50px 20px;
-  background-color: #1A1B1E;
+  padding: 100px 20px; /* 이미지가 잘 보이도록 패딩을 약간 늘렸습니다 */
+  
+  /* 배경 이미지 설정 */
+  /* 이미지 경로는 public 폴더에 넣은 파일명으로 수정하세요 */
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('/about_me_background.jpg'); 
+  
+  background-size: cover;      /* 화면에 꽉 차게 */
+  background-position: center; /* 가운데 정렬 */
+  background-attachment: fixed; /* 스크롤 시 이미지는 고정되는 효과 (선택사항) */
+  
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-main-text {

@@ -1,6 +1,6 @@
 .skills-section {
   width: 100%;
-  padding: 0px 20px 60px 20px; /* 하단 패딩 축소 (100px -> 60px) */
+   padding: 0px 20px 40px 20px; 
   background-color: #1F2A44;
   display: flex;
   flex-direction: column;
@@ -10,25 +10,25 @@
 }
 
 .skills-title h2 {
- font-size: 3rem;
+ font-size: 2.5rem;
   font-weight: 900; 
   padding-bottom: 8px;
   color: #FFFFFF;
-  margin-top: 40px; /* 상단 여백 축소 */
-  margin-bottom: 30px;
+  margin-top: 10px; /* 상단 여백 축소 */
+  margin-bottom: 10px;
 }
 
 .skills-container {
-  max-width: 700px; /* 전체 너비 대폭 축소 (1000px -> 700px) */
+  max-width: 600px; /* 전체 너비 대폭 축소 (1000px -> 700px) */
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px; /* 카드 사이 간격 축소 */
+  gap: 15px; /* 카드 사이 간격 축소 */
 }
 
 .skill-card {
   background-color: #fff;
-  padding: 20px 25px; /* 카드 내부 여백 축소 */
+  padding: 15px 20px; /* 카드 내부 여백 축소 */
   border-radius: 15px; /* 곡률 살짝 조정 */
   box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.1); /* 그림자 크기도 축소 */
   display: flex;
