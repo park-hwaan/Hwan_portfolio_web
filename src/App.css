@@ -26,3 +26,7 @@ section {
   align-items: center;
   scroll-margin-top: 80px; /* 메뉴 클릭 시 제목 안 가려지게 */
 }
+
+html {
+  scroll-behavior: smooth;
+}

@@ -4,16 +4,20 @@ import "./Navbar.css"
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // 50px 이상 스크롤되면 변경
-    }
+ const handleMoveToSection = (e, id) => {
+    e.preventDefault(); // 기본 해시 이동 방지
+    const element = document.querySelector(id);
+    if (element) {
+      const offset = 100; // 네비바 높이 고려한 여백
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-    window.addEventListener("scroll", handleScroll)
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    };
-  }, [])
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
 
   return (
     <header className={`navbar ${scrolled ? "scrolled" : ""}`}>

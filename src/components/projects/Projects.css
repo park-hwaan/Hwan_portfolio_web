@@ -72,7 +72,6 @@ body.modal-open .navbar {
   font-size: 1.8rem; /* 아이콘 크기를 조금 더 키움 */
   color: #333;       /* 검정색 (완전 검정 대신 짙은 회색 권장) */
   font-weight: 300;  /* 얇은 'X'가 더 세련되어 보임 (폰트에 따라 조정 가능) */
-  
   cursor: pointer;
   transition: color 0.2s ease, transform 0.2s ease;
   padding: 0;        /* 기본 패딩 제거 */

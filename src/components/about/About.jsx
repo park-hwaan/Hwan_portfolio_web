@@ -27,8 +27,6 @@ function About() {
         <button className="hero-btn">더 알아보기 ↓</button>
       </div>
 
-      <hr className="divider" />
-
       {/* 🔥 About 영역 */}
       <div className="about-details">
         <div className="about-title">
